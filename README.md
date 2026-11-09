@@ -1,8 +1,8 @@
 # Von Stata zu Python: Eine Einführung für Stata-Umsteiger
 
-Willkommen im offiziellen GitHub-Repository zum Guide **"Von .do zu .py - Datenanalyse mit Python"**. 
+Willkommen im GitHub-Repository zum Guide **"Von .do zu .py - Datenanalyse mit Python"**. 
 
-Dieses Repository enthält alle begleitenden Jupyter Notebooks (`.ipynb`) und Praxis-Codebeispiele. Es wurde speziell für Analysten, Forscher und Data Scientists entwickelt, die nach Jahren (oder Jahrzehnten) hocheffizienter Stata-Arbeit den nahtlosen Wechsel in die Python-Welt vollziehen möchten.
+Dieses Repository enthält alle begleitenden Jupyter Notebooks (`.ipynb`) und Praxis-Codebeispiele. Es wurde speziell für Stata-Nutzer entwickelt, die sich in Python und pandas einarbeiten möchten.
 
 ## 📖 Begleitender Kurs auf Substack
 Die ausführlichen methodischen Erklärungen, Stolpersteine und detaillierten Syntax-Vergleiche erscheinen kapitelweise als Newsletter.
