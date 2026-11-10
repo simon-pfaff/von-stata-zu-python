@@ -1,37 +1,58 @@
-# Von Stata zu Python: Eine Einführung für Stata-Umsteiger
+# Von .do zu .py - Datenanalyse mit Python: Eine Einführung für Stata-Umsteiger
 
-Willkommen im GitHub-Repository zum Guide **"Von .do zu .py - Datenanalyse mit Python"**. 
+Willkommen im GitHub-Repository zum Guide **"Von .do zu .py"**. 
 
-Dieses Repository enthält alle begleitenden Jupyter Notebooks (`.ipynb`) und Praxis-Codebeispiele. Es wurde speziell für Stata-Nutzer entwickelt, die sich in Python und pandas einarbeiten möchten.
+Dieses Repository enthält alle begleitenden Jupyter Notebooks (`.ipynb`) und Praxis-Codebeispiele. Es wurde für Stata-Nutzer entwickelt, die sich mit Python und padas beschäftigen möchten.
 
 ## 📖 Begleitender Kurs auf Substack
-Die ausführlichen methodischen Erklärungen, Stolpersteine und detaillierten Syntax-Vergleiche erscheinen kapitelweise als Newsletter.
+Die ausführlichen Erklärungen, Hintergrundberichte und vertiefenden Syntax-Vergleiche erscheinen kapitelweise als Newsletter.
 
 👉 **[Hier geht es zum Substack-Kurs](HIER_SPÄTER_IHR_SUBSTACK_LINK_REIN)** (Jetzt kostenlos abonnieren!)
 
 ---
 
-## 🗺️ Inhaltsverzeichnis & Kursstruktur
+## 🗺️ Inhaltsverzeichnis & Repository-Struktur
 
-Hier finden Sie die Jupyter Notebooks zu den einzelnen Abschnitten (wird wöchentlich aktualisiert):
+Hier finden Sie die Jupyter Notebooks und Code-Beispiele zu den einzelnen Abschnitten (wird fortlaufend aktualisiert):
 
-### Teil 1: Die Grundlagen des Umstiegs
-* 📂 `kapitel_01/` **Datenstrukturen & Import**
-  * Von `.dta` und `use` zu Pandas DataFrames (`pd.read_stata`, `pd.read_csv`)
-* 📂 `kapitel_02/` **Daten-Inspektion & Erste Übersicht**
-  * Das Python-Äquivalent zu `describe`, `summarize` und `codebook`
-* 📂 `kapitel_03/` **Data Cleaning & Transformation**
-  * Variablen manipulieren: `keep if`, `drop`, `replace` und `egen` in Python umsetzen
+### 1. Einführung
+* 📂 `01_einfuehrung/`
+  * 1.1 Beispieldatensätze und Importkonventionen
 
-### Teil 2: Fortgeschrittene Datenmanipulation
-* 📂 `kapitel_04/` **Zusammenfügen & Aggregieren**
-  * Datensätze matchen: `merge 1:1` und `merge m:1` vs. `pd.merge()`
-  * Daten kollabieren: Der Wechsel von `collapse (mean)` zu `.groupby().mean()`
-* 📂 `kapitel_05/` **Reshaping & Paneldaten** (In Überarbeitung)
-  * Daten umstrukturieren: `reshape long` und `reshape wide` mit Pandas `melt` und `pivot`
+### 2. Software für die Datenanalyse
+* 📂 `02_software_setup/`
+  * 2.1 Der Ausgangspunkt: Anaconda
+    * 2.1.1 virtuelle Umgebungen
+  * 2.2 Die Auswahl der Entwicklungsumgebung (IDE)
+    * 2.2.1 IPython
+    * 2.2.2 Spyder
+    * 2.2.3 Jupyter Notebook
+    * 2.2.4 Ein Blick über den Tellerrand
 
-### Teil 3: Ökonometrie & Datenvisualisierung (Geplant)
-* 📂 `kapitel_06/` **Regressionsanalysen & Statistische Modelle**
-  * Lineare Regressionen: Von `regress y x` zu `statsmodels` und `linearmodels`
-* 📂 `kapitel_07/` **Grafikerstellung**
-  * `twoway scatter` adieu: Datenvisualisierung mit `matplotlib` und `seaborn`
+### 3. Erste Schritte hin zur Datenanalyse mit pandas
+* 📂 `03_erste_schritte_pandas/`
+  * 3.1 Eindimensionales Datenarray: Series
+    * 3.1.1 Series als Python Dictionary
+    * 3.1.2 Slicing in Python
+    * 3.1.3 Anwendungsbeispiel 1
+  * 3.2 Zweidimensionales Datenarray: DataFrame
+    * 3.2.1 Einträge ergänzen und löschen
+    * 3.2.2 Auswahl von Daten
+    * 3.2.3 Sortieren von Daten
+    * 3.2.4 Erste deskriptive Statistiken berechnen I
+    * 3.2.5 Erste deskriptive Statistiken berechnen II
+
+### 4. Daten einlesen
+* 📂 `04_daten_einlesen/`
+  * 4.1 Einfache Wege: Manuelle Eingabe und CSV-Dateien
+  * 4.2 Daten im Stata-Format einlesen mit `pd.read_stata()`
+    * 4.2.1 Ein erster Check der Daten
+    * 4.2.2 Häufigkeitstabelle und Durchschnittswert
+    * 4.2.3 Teildatensatz auswählen und speichern
+  * 4.3 Daten im Stata-Format einlesen mit der Bibliothek `pyreadstat`
+    * 4.3.1 Installation von pyreadstat
+    * 4.3.2 Einlesen der Daten
+  * 4.4 `pd.read_stata()` versus `pyreadstat`
+
+---
+*Hinweis: Der Quellcode und die Jupyter Notebooks werden parallel zur kapitelweisen Veröffentlichung auf Substack freigeschaltet.*
