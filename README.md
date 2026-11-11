@@ -4,14 +4,12 @@ Willkommen im GitHub-Repository zum Guide **"Von .do zu .py"**.
 
 Dieses Repository enthält alle begleitenden Jupyter Notebooks (`.ipynb`) und Praxis-Codebeispiele. Es wurde für Stata-Nutzer entwickelt, die sich mit Python und padas beschäftigen möchten.
 
+👉 **Direkt zum Nachschlagen:** [Stata-zu-Python Cheat Sheet (Befehlsübersicht)](./CHEATSHEET.md)
+
 ## 📖 Begleitender Kurs auf Substack
 Die ausführlichen Erklärungen, Hintergrundberichte und vertiefenden Syntax-Vergleiche erscheinen kapitelweise als Newsletter.
 
 👉 **[Hier geht es zum Substack-Kurs](HIER_SPÄTER_IHR_SUBSTACK_LINK_REIN)** (Jetzt kostenlos abonnieren!)
-
----
-
-👉 **Direkt zum Nachschlagen:** [Stata-zu-Python Cheat Sheet (Befehlsübersicht)](./CHEATSHEET.md)
 
 ---
 
