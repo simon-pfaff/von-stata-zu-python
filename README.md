@@ -11,6 +11,10 @@ Die ausführlichen Erklärungen, Hintergrundberichte und vertiefenden Syntax-Ver
 
 ---
 
+👉 **Direkt zum Nachschlagen:** [Stata-zu-Python Cheat Sheet (Befehlsübersicht)](./CHEATSHEET.md)
+
+---
+
 ## 🗺️ Inhaltsverzeichnis & Repository-Struktur
 
 Hier finden Sie die Jupyter Notebooks und Code-Beispiele zu den einzelnen Abschnitten (wird fortlaufend aktualisiert):
