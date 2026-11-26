@@ -6,6 +6,12 @@ Dieses Repository enthält alle begleitenden Jupyter Notebooks (`.ipynb`) und Pr
 
 👉 **Direkt zum Nachschlagen:** [Stata-zu-Python Cheat Sheet (Befehlsübersicht)](./CHEATSHEET.md)
 
+## 💡 So nutzen Sie dieses Repository
+Ein GitHub-Konto oder Git-Kenntnisse sind nicht nötig.
+* **Lesen:** Cheat Sheet und Übersicht lassen sich direkt im Browser ansehen.
+* **Alle Dateien herunterladen:** Oben rechts auf den grünen Button **Code** klicken, dann **Download ZIP**.
+* **Einzelne Datei herunterladen:** Datei anklicken, dann rechts oben auf das Download-Symbol klicken.
+
 ## 📖 Begleitender Kurs auf Substack
 Die ausführlichen Erklärungen, Hintergrundberichte und vertiefenden Syntax-Vergleiche erscheinen kapitelweise als Newsletter auf Substack (Start in Kürze).
 
