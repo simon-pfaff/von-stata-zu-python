@@ -41,12 +41,6 @@ Diese Übersicht hilft beim schnellen Umstieg von Stata auf Python (`pandas`). A
 | `keep if alter == 18` | `df = df[df['alter'] == 18].copy()` | Auswahl |
 | `drop if alter == 18` | `df = df[df['alter'] != 18].copy()` | Inverse Auswahl |
 
-### Speichern
-
-| Stata | Python | Beschreibung |
-| :--- | :--- | :--- |
-| `save "daten.dta", replace` | `df.to_stata("daten.dta", write_index=False)` | Datensatz speichern |
-
 ### Spalten und Zeilen löschen
 
 | Stata | Python | Beschreibung |
