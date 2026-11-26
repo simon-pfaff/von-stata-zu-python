@@ -11,19 +11,6 @@ Die ausführlichen Erklärungen, Hintergrundberichte und vertiefenden Syntax-Ver
 
 <!-- 👉 **[Hier geht es zum Substack-Kurs](HIER_SPÄTER_IHR_SUBSTACK_LINK_REIN)** (Jetzt kostenlos abonnieren!) -->
 
-## 📊 Daten
-Die Beispiele verwenden das Politbarometer 2024 (GESIS, Studiennummer ZA8974). Die Daten selbst sind nicht in diesem Repository enthalten, sie sind über das GESIS-Datenarchiv erhältlich. Die Notebooks enthalten nur den Code ohne Ausgaben. Die Ergebnisse lassen sich mit den Originaldaten reproduzieren.
-
-## 🧰 Verwendete Bibliotheken
-
-| Bibliothek | Beschreibung |
-| :--- | :--- |
-| `pandas` | pandas ist die zentrale Python-Bibliothek für die Datenaufbereitung und -analyse. Sie stellt mit Series und DataFrame tabellarische Datenstrukturen bereit, die einem Stata-Datensatz ähneln, und ermöglicht das Einlesen, Filtern, Sortieren, Umformen und Zusammenfügen von Daten sowie die Berechnung deskriptiver Statistiken. Zudem lassen sich Daten in gängige Formate wie CSV, Excel oder .dta importieren und exportieren. |
-| `numpy` | NumPy ist die grundlegende Python-Bibliothek für numerische Berechnungen. Sie stellt leistungsfähige mehrdimensionale Arrays sowie mathematische Funktionen für Vektor- und Matrixoperationen, Zufallszahlen und statistische Kennwerte bereit. pandas baut technisch auf NumPy auf; in der Datenanalyse wird NumPy vor allem für Berechnungen und das Erzeugen neuer Variablen genutzt, etwa mit `np.where()` als Gegenstück zu Statas `cond()`. |
-| `pyreadstat` | pyreadstat ist eine Python-Bibliothek zum Lesen und Schreiben von Datendateien aus Statistikprogrammen wie Stata (.dta), SPSS (.sav) und SAS. Anders als `pd.read_stata()` liefert sie neben dem Datensatz ein separates Metadaten-Objekt mit Variablenlabels und Value Labels und behält dabei die ursprünglichen Zahlencodes. Damit eignet sie sich besonders für sozialwissenschaftliche Umfragedaten, bei denen Labels wichtig sind. |
-| `matplotlib` | Matplotlib ist eine weit verbreitete Python-Bibliothek zur Datenvisualisierung. Sie ermöglicht die Erstellung statischer, animierter und interaktiver Diagramme (wie Balken-, Linien- oder Streudiagramme) sowie die detaillierte Anpassung von Beschriftungen, Farben, Achsen und Layouts für den Export in gängige Bild- und Dokumentformate. |
-| `openpyxl` | OpenPyXL ist eine Python-Bibliothek zum Lesen, Schreiben und Bearbeiten von modernen Excel-Dateien (.xlsx, .xlsm). Im Rahmen der Datenanalyse dient sie der Datenaufbereitungs-Bibliothek pandas als technische Schnittstelle (Engine), um Tabellendaten direkt aus Excel-Arbeitsmappen zu importieren oder darin zu speichern. Ein eigener Import ist dafür nicht nötig, die Bibliothek muss nur installiert sein. |
-
 ---
 
 ## 🗺️ Inhaltsverzeichnis & Repository-Struktur
@@ -68,6 +55,21 @@ Hier finden Sie die Jupyter Notebooks und Code-Beispiele zu den einzelnen Abschn
     * 4.3.1 Installation von pyreadstat
     * 4.3.2 Einlesen der Daten
   * 4.4 `pd.read_stata()` versus `pyreadstat`
+
+---
+
+## 📊 Daten
+Die Beispiele verwenden das Politbarometer 2024 (GESIS, Studiennummer ZA8974). Die Daten selbst sind nicht in diesem Repository enthalten, sie sind über das GESIS-Datenarchiv erhältlich. Die Notebooks enthalten nur den Code ohne Ausgaben. Die Ergebnisse lassen sich mit den Originaldaten reproduzieren.
+
+## 🧰 Verwendete Bibliotheken
+
+| Bibliothek | Beschreibung |
+| :--- | :--- |
+| `pandas` | pandas ist die zentrale Python-Bibliothek für die Datenaufbereitung und -analyse. Sie stellt mit Series und DataFrame tabellarische Datenstrukturen bereit, die einem Stata-Datensatz ähneln, und ermöglicht das Einlesen, Filtern, Sortieren, Umformen und Zusammenfügen von Daten sowie die Berechnung deskriptiver Statistiken. Zudem lassen sich Daten in gängige Formate wie CSV, Excel oder .dta importieren und exportieren. |
+| `numpy` | NumPy ist die grundlegende Python-Bibliothek für numerische Berechnungen. Sie stellt leistungsfähige mehrdimensionale Arrays sowie mathematische Funktionen für Vektor- und Matrixoperationen, Zufallszahlen und statistische Kennwerte bereit. pandas baut technisch auf NumPy auf; in der Datenanalyse wird NumPy vor allem für Berechnungen und das Erzeugen neuer Variablen genutzt, etwa mit `np.where()` als Gegenstück zu Statas `cond()`. |
+| `pyreadstat` | pyreadstat ist eine Python-Bibliothek zum Lesen und Schreiben von Datendateien aus Statistikprogrammen wie Stata (.dta), SPSS (.sav) und SAS. Anders als `pd.read_stata()` liefert sie neben dem Datensatz ein separates Metadaten-Objekt mit Variablenlabels und Value Labels und behält dabei die ursprünglichen Zahlencodes. Damit eignet sie sich besonders für sozialwissenschaftliche Umfragedaten, bei denen Labels wichtig sind. |
+| `matplotlib` | Matplotlib ist eine weit verbreitete Python-Bibliothek zur Datenvisualisierung. Sie ermöglicht die Erstellung statischer, animierter und interaktiver Diagramme (wie Balken-, Linien- oder Streudiagramme) sowie die detaillierte Anpassung von Beschriftungen, Farben, Achsen und Layouts für den Export in gängige Bild- und Dokumentformate. |
+| `openpyxl` | OpenPyXL ist eine Python-Bibliothek zum Lesen, Schreiben und Bearbeiten von modernen Excel-Dateien (.xlsx, .xlsm). Im Rahmen der Datenanalyse dient sie der Datenaufbereitungs-Bibliothek pandas als technische Schnittstelle (Engine), um Tabellendaten direkt aus Excel-Arbeitsmappen zu importieren oder darin zu speichern. Ein eigener Import ist dafür nicht nötig, die Bibliothek muss nur installiert sein. |
 
 ---
 *Hinweis: Der Quellcode und die Jupyter Notebooks werden parallel zur kapitelweisen Veröffentlichung auf Substack freigeschaltet.*
