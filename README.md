@@ -7,9 +7,9 @@ Dieses Repository enthält alle begleitenden Jupyter Notebooks (`.ipynb`) und Pr
 👉 **Direkt zum Nachschlagen:** [Stata-zu-Python Cheat Sheet (Befehlsübersicht)](./CHEATSHEET.md)
 
 ## 📖 Begleitender Kurs auf Substack
-Die ausführlichen Erklärungen, Hintergrundberichte und vertiefenden Syntax-Vergleiche erscheinen kapitelweise als Newsletter.
+Die ausführlichen Erklärungen, Hintergründe und vertiefenden Syntax-Vergleiche erscheinen kapitelweise als Newsletter auf Substack (Start in Kürze).
 
-👉 **[Hier geht es zum Substack-Kurs](HIER_SPÄTER_IHR_SUBSTACK_LINK_REIN)** (Jetzt kostenlos abonnieren!)
+<!-- 👉 **[Hier geht es zum Substack-Kurs](HIER_SPÄTER_IHR_SUBSTACK_LINK_REIN)** (Jetzt kostenlos abonnieren!) -->
 
 ---
 
@@ -18,7 +18,7 @@ Die ausführlichen Erklärungen, Hintergrundberichte und vertiefenden Syntax-Ver
 Hier finden Sie die Jupyter Notebooks und Code-Beispiele zu den einzelnen Abschnitten (wird fortlaufend aktualisiert):
 
 ### 1. Einführung
-* 📂 `01_einfuehrung/`
+* 📂 `01_einfuehrung/` *(folgt)*
   * 1.1 Beispieldatensätze und Importkonventionen
 
 ### 2. Software für die Datenanalyse
@@ -32,7 +32,7 @@ Hier finden Sie die Jupyter Notebooks und Code-Beispiele zu den einzelnen Abschn
     * 2.2.4 Ein Blick über den Tellerrand
 
 ### 3. Erste Schritte hin zur Datenanalyse mit pandas
-* 📂 `03_erste_schritte_pandas/`
+* 📂 `03_erste_schritte_pandas/` *(folgt)*
   * 3.1 Eindimensionales Datenarray: Series
     * 3.1.1 Series als Python Dictionary
     * 3.1.2 Slicing in Python
@@ -45,7 +45,7 @@ Hier finden Sie die Jupyter Notebooks und Code-Beispiele zu den einzelnen Abschn
     * 3.2.5 Erste deskriptive Statistiken berechnen II
 
 ### 4. Daten einlesen
-* 📂 `04_daten_einlesen/`
+* 📂 `04_daten_einlesen/` *(folgt)*
   * 4.1 Einfache Wege: Manuelle Eingabe und CSV-Dateien
   * 4.2 Daten im Stata-Format einlesen mit `pd.read_stata()`
     * 4.2.1 Ein erster Check der Daten
