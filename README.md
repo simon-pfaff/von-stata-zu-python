@@ -7,9 +7,12 @@ Dieses Repository enthält alle begleitenden Jupyter Notebooks (`.ipynb`) und Pr
 👉 **Direkt zum Nachschlagen:** [Stata-zu-Python Cheat Sheet (Befehlsübersicht)](./CHEATSHEET.md)
 
 ## 📖 Begleitender Kurs auf Substack
-Die ausführlichen Erklärungen, Hintergründe und vertiefenden Syntax-Vergleiche erscheinen kapitelweise als Newsletter auf Substack (Start in Kürze).
+Die ausführlichen Erklärungen, Hintergrundberichte und vertiefenden Syntax-Vergleiche erscheinen kapitelweise als Newsletter auf Substack (Start in Kürze).
 
 <!-- 👉 **[Hier geht es zum Substack-Kurs](HIER_SPÄTER_IHR_SUBSTACK_LINK_REIN)** (Jetzt kostenlos abonnieren!) -->
+
+## 📊 Daten
+Die Beispiele verwenden das Politbarometer 2024 (GESIS, Studiennummer ZA8974). Die Daten selbst sind nicht in diesem Repository enthalten, sie sind über das GESIS-Datenarchiv erhältlich. Die Notebooks enthalten nur den Code ohne Ausgaben. Die Ergebnisse lassen sich mit den Originaldaten reproduzieren.
 
 ---
 
@@ -22,7 +25,7 @@ Hier finden Sie die Jupyter Notebooks und Code-Beispiele zu den einzelnen Abschn
   * 1.1 Beispieldatensätze und Importkonventionen
 
 ### 2. Software für die Datenanalyse
-* 📂 `02_software_setup/`
+* 📂 `02_software_setup/` *(folgt)*
   * 2.1 Der Ausgangspunkt: Anaconda
     * 2.1.1 virtuelle Umgebungen
   * 2.2 Die Auswahl der Entwicklungsumgebung (IDE)
