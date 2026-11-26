@@ -1,3 +1,6 @@
+
+markdown
+
 # Von .do zu .py - Datenanalyse mit Python: Eine Einführung für Stata-Umsteiger
 
 Willkommen im GitHub-Repository zum Guide **"Von .do zu .py"**. 
@@ -73,3 +76,95 @@ Die Beispiele verwenden das Politbarometer 2024 (GESIS, Studiennummer ZA8974). D
 
 ---
 *Hinweis: Der Quellcode und die Jupyter Notebooks werden parallel zur kapitelweisen Veröffentlichung auf Substack freigeschaltet.*
+
+nice, danke. jetzt bitte nochmal das cheat sheep inkl. der kurzbeschreibungen der bibliotheken als md, bitte
+markdown
+
+# 📋 Stata-zu-Python Cheat Sheet (Work in Progress)
+
+Diese Übersicht hilft beim schnellen Umstieg von Stata auf Python (`pandas`). Alle Beispiele gehen davon aus, dass die Bibliotheken importiert wurden und der Datensatz im DataFrame `df` gespeichert ist.
+
+### Bibliotheken laden
+
+| Stata | Python | Beschreibung |
+| :--- | :--- | :--- |
+| | `import numpy as np` <br> `import pandas as pd` <br> `import pyreadstat` <br> `import matplotlib.pyplot as plt` | Python Bibliotheken laden |
+
+| Bibliothek | Zweck |
+| :--- | :--- |
+| `pandas` | Datensätze (DataFrames) aufbereiten und analysieren |
+| `numpy` | Numerische Berechnungen, z. B. `np.where()` |
+| `pyreadstat` | .dta/.sav einlesen und speichern, inkl. Labels |
+| `matplotlib` | Grafiken erstellen |
+| `openpyxl` | Excel-Dateien lesen und schreiben (wird von pandas im Hintergrund genutzt, kein Import nötig) |
+
+### Datensatz einlesen I
+
+| Stata | Python | Beschreibung |
+| :--- | :--- | :--- |
+| `use "daten.dta"` | `df = pd.read_stata("daten.dta")` | Datensatz einlesen |
+
+### Datensatz einlesen II, Labels anzeigen
+
+| Stata | Python | Beschreibung |
+| :--- | :--- | :--- |
+| | `df, meta = pyreadstat.read_dta("daten.dta")` | Datensatz und Metadaten einlesen (zwei Objekte) |
+| `describe <variablenname>` | `meta.column_names_to_labels.get('<variablenname>')` | Variablenlabel anzeigen |
+| - | `meta.variable_value_labels.get('<variablenname>')` | Value Labels einer Variablen anzeigen |
+| `describe <variablenname>` | `meta.variable_to_label.get('<variablenname>')` | Labelname der Variablen anzeigen |
+| `label list <labelname>` | `meta.value_labels['<labelname>']` | Value Labels nach Labelname |
+
+### Datensatzbetrachtung
+
+| Stata | Python | Beschreibung |
+| :--- | :--- | :--- |
+| `describe` | `df.info()` | Datensatz beschreiben |
+| `list in 1/5` | `df.head()` | erste 5 Zeilen anzeigen |
+| `list in -5/L` | `df.tail()` | letzte 5 Zeilen anzeigen |
+| `count` | `len(df)` <br> `df.shape[0]` | Zahl der Beobachtungen |
+| `describe, short` | `df.shape` | Zahl der Beobachtungen & Variablen |
+
+### Auswahl
+
+| Stata | Python | Beschreibung |
+| :--- | :--- | :--- |
+| `keep if alter == 18` | `df = df[df['alter'] == 18].copy()` | Auswahl |
+| `drop if alter == 18` | `df = df[df['alter'] != 18].copy()` | Inverse Auswahl |
+
+### Spalten und Zeilen löschen
+
+| Stata | Python | Beschreibung |
+| :--- | :--- | :--- |
+| `drop Einkommen` | `df = df.drop(columns="Einkommen")` <br> `del df["Einkommen"]` | Spalte löschen |
+| `drop if index == 1` | `df = df[df['index'] != 1].copy()` | Zeilen löschen, in denen die Variable `index` den Wert 1 hat |
+| `drop if _n == 2` | `df = df.drop(index=1)` | Zeile mit dem Indexlabel 1 löschen (= 2. Zeile) |
+| `drop in 1` | `df = df.drop(df.index[0])` | Erste Zeile löschen |
+
+### Deskriptive Statistiken
+
+| Stata | Python | Beschreibung |
+| :--- | :--- | :--- |
+| `summarize var1 var2, detail` | `df[['var1', 'var2']].describe()` | Zusammenfassende Statistiken |
+| `tab UMOD` | `df['UMOD'].value_counts().sort_index()` | Häufigkeitsverteilung |
+| `tabulate v7, missing` | `df['v7'].value_counts(dropna=False).sort_index()` | Häufigkeitsverteilung, absolut |
+| `tabulate v7, missing` | `df['v7'].value_counts(dropna=False, normalize=True).sort_index()` | Häufigkeitsverteilung, Prozent |
+| `tab var1 var2` | `pd.crosstab(df["var1"], df["var2"])` | Kreuztabelle |
+| `summarize VB` | `df['VB'].mean()` | Mittelwert |
+
+---
+
+## Erläuterungen
+
+* `pd.read_stata` und `pyreadstat` verhalten sich bei Labels unterschiedlich. `pd.read_stata` macht aus Variablen mit Value Labels standardmäßig Kategorien mit den Labeltexten (`convert_categoricals=True`). Die Zahlencodes sind dann nicht enthalten. Mit `pd.read_stata("daten.dta", convert_categoricals=False)` behält auch pandas die Zahlencodes. `pyreadstat.read_dta` behält die Zahlencodes.
+
+### Speichern der Datensätze
+
+**pandas**
+
+| Stata | Python | Beschreibung |
+| :--- | :--- | :--- |
+| `use "daten.dta"` | `df =
+
+
+Claude ist eine KI und kann Fehler machen.
+Claude antwortet
