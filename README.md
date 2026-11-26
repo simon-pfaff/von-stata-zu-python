@@ -11,9 +11,6 @@ Die ausführlichen Erklärungen, Hintergrundberichte und vertiefenden Syntax-Ver
 
 <!-- 👉 **[Hier geht es zum Substack-Kurs](HIER_SPÄTER_IHR_SUBSTACK_LINK_REIN)** (Jetzt kostenlos abonnieren!) -->
 
-## 📊 Daten
-Die Beispiele verwenden das Politbarometer 2024 (GESIS, Studiennummer ZA8974). Die Daten selbst sind nicht in diesem Repository enthalten, sie sind über das GESIS-Datenarchiv erhältlich. Die Notebooks enthalten nur den Code ohne Ausgaben. Die Ergebnisse lassen sich mit den Originaldaten reproduzieren.
-
 ---
 
 ## 🗺️ Inhaltsverzeichnis & Repository-Struktur
@@ -60,4 +57,14 @@ Hier finden Sie die Jupyter Notebooks und Code-Beispiele zu den einzelnen Abschn
   * 4.4 `pd.read_stata()` versus `pyreadstat`
 
 ---
-*Hinweis: Der Quellcode und die Jupyter Notebooks werden parallel zur kapitelweisen Veröffentlichung auf Substack freigeschaltet.*
+
+## 📊 Daten
+Die Beispiele verwenden das Politbarometer 2024 (GESIS, Studiennummer ZA8974). Die Daten selbst sind nicht in diesem Repository enthalten, sie sind über das GESIS-Datenarchiv erhältlich. Die Notebooks enthalten nur den Code ohne Ausgaben. Die Ergebnisse lassen sich mit den Originaldaten reproduzieren.
+
+## 🧰 Verwendete Bibliotheken
+
+| Bibliothek | Beschreibung |
+| :--- | :--- |
+| `pandas` | pandas ist die zentrale Python-Bibliothek für die Datenaufbereitung und -analyse. Sie stellt mit Series und DataFrame tabellarische Datenstrukturen bereit, die einem Stata-Datensatz ähneln, und ermöglicht das Einlesen, Filtern, Sortieren, Umformen und Zusammenfügen von Daten sowie die Berechnung deskriptiver Statistiken. Zudem lassen sich Daten in gängige Formate wie CSV, Excel oder .dta importieren und exportieren. |
+| `numpy` | NumPy ist die grundlegende Python-Bibliothek für numerische Berechnungen. Sie stellt leistungsfähige mehrdimensionale Arrays sowie mathematische Funktionen für Vektor- und Matrixoperationen, Zufallszahlen und statistische Kennwerte bereit. pandas baut technisch auf NumPy auf; in der Datenanalyse wird NumPy vor allem für Berechnungen und das Erzeugen neuer Variablen genutzt, etwa mit `np.where()` als Gegenstück zu Statas `cond()`. |
+| `pyreadstat` | pyreadstat ist eine Python-Bibliothek zum Lesen und Schreiben von Datendateien aus
